@@ -1,2 +1,2 @@
-# Unix-Shell-Interface
+# GUI-shell
 Course project
