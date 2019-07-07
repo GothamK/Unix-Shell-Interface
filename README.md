@@ -1,2 +1,2 @@
 # GUI-shell
-Course project
+Course project -> graphical shell
