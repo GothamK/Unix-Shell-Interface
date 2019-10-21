@@ -2,12 +2,12 @@ clear
 echo "                FILE AND DIRECTORY MANAGEMENT COMMANDS"
 echo -e "\n"
 echo -e "\n"
-echo " 1 -- Display the contents of a file"
-echo " 2 -- Remove a file"
-echo " 3 -- Copy a file"
-echo " 4 -- List a file"
+echo " 1 -- Display the file content"
+echo " 2 -- Remove file"
+echo " 3 -- Copy file"
+echo " 4 -- List file"
 echo " 5 -- Size of a file"
-echo " 6 -- Exit program"
+echo " 6 -- Exit"
 echo -e  "\n"
 breaker=1
 while [ "$breaker" -eq 1 ]
@@ -46,7 +46,7 @@ fi
 
 
 if [[ $f -eq 5 ]] ; then
-echo -e "Enter the filename \n or filepath(if the file isn't in the same directory) to show it's size:"
+echo -e "Enter the filename or filepath(if the file isn't in the same directory) to show it's size:"
 read filenamerr
 if [ -f $filenamerr ] ; then
   ls -h -l "$filenamerr" | awk '{print $5}'
